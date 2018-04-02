@@ -1,3 +1,8 @@
+var apm = require('elastic-apm-node').start({
+  serviceName: 'votingApp',
+  serverUrl: 'http://localhost:8200'
+})
+
 var express = require('express'),
     async = require('async'),
     pg = require("pg"),
